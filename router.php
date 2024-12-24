@@ -11,17 +11,17 @@ $routes=[
     "/note" => "controllers/note.php",
 ];
 
-function abourt($code = 404) {
+
+function abort($code = 404) {
     http_response_code($code);
-    require "views/{$code}.view.php";
+    require "views/{$code}.php";
+      die();
 }
 
 function routToController($uri, $routes) {
     if(array_key_exists($uri, $routes)){
     require $routes[$uri];
-} else {
-   abourt();
-}
+} 
 };
 
 routToController($uri, $routes);
