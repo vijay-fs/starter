@@ -32,7 +32,7 @@ class Router
 
     public function delete($uri, $controller)
     {
-        $this->add('DELETE', $uri, $controller);
+      return $this->add('DELETE', $uri, $controller);
     }
 
     public function patch($uri, $controller)
