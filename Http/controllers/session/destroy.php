@@ -1,6 +1,6 @@
 <?php
-use Core\Session;
-Session::destroy();
+use Core\Authenticator;
+(new Authenticator)->logout();
 
 header('location: /');
 exit();
