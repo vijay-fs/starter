@@ -1,0 +1,16 @@
+{
+    "name": "ghost/starter",
+    "authors": [
+        {
+            "name": "vijay-fs",
+            "email": "vijaykarthik9868@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Core\\": "Core/",
+            "Http\\": "Http/"
+        }
+    }
+}
